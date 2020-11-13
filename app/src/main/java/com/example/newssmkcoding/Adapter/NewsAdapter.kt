@@ -37,7 +37,6 @@ class NewsAdapter(var mContext: Context, var mData: ArrayList<MNews>) :
         val data = mData[position]
         holder.mTitle.text = data.title
         holder.mDescription.text = data.description
-//        holder.mPublishedAt.text = data.publishedAt
 
         holder.itemView.setOnClickListener(){
             val detail = Intent(mContext, DetailActivity::class.java)
@@ -57,6 +56,5 @@ class NewsAdapter(var mContext: Context, var mData: ArrayList<MNews>) :
     }
 
     override fun getItemCount(): Int = mData.size
-
 
 }
